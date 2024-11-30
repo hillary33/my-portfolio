@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { ThemeProvider } from "next-themes";
 
 
 export const metadata: Metadata = {
@@ -18,7 +19,9 @@ export default function RootLayout({
       <link rel="icon" type="image" href="img/meuAvatar.png" />
       </head>
       <body>
+      <ThemeProvider attribute="data-theme">
         {children}
+       </ThemeProvider>
       </body>
     </html>
   );

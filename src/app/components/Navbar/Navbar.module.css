@@ -38,7 +38,7 @@
   .iconDarkMode {
     display: flex;
     flex-direction: row-reverse;
-    margin-right: -100px;
-    margin-top: -6px;
+    margin-right: -150px;
+    margin-top: -8px;
     cursor: pointer;
   }

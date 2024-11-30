@@ -13,7 +13,7 @@ export default function Header() {
                     </p>
                 </div>  
                 <div className={styles.picture}>
-                    <Image src="/img/modelo.png" height='300' width='300' alt="foto perfil" />
+                    <Image src="/img/profile.png" height='300' width='300' alt="foto perfil" className={styles.img}/>
                 </div>
             </div>
         </>

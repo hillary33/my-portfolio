@@ -1,6 +1,6 @@
-import Image from 'next/image';
 import styles from './Navbar.module.css';
 import  Link  from 'next/link';
+import {DarkTheme} from '../DarkTheme/darkTheme';
 
 export default function Navbar(){
     return(
@@ -15,10 +15,7 @@ export default function Navbar(){
             </section>
 
             <div className={styles.iconDarkMode}>
-               <Image src="./img/darkTheme.svg" 
-               alt="Dark Theme" 
-               width={22}
-               height={22}/>
+               <DarkTheme />
             </div>
         </section>
         
