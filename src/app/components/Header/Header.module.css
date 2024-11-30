@@ -1,0 +1,42 @@
+.header {
+    display: flex;
+    margin-top: 10rem;
+    gap: 180px;
+  }
+  
+  .textHeader {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10rem;
+    margin-top: 2rem;
+    gap: 20px;
+  }
+  
+  .textHeader h2 {
+    font-size: 2.4rem;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .textHeader p{
+    font-size: 1.5em;
+    font-weight: 300;
+    text-align: center;
+    width: 30rem;
+  }
+
+  @keyframes picProfile {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .picture:hover {
+    animation: picProfile 2s linear 1;
+  }

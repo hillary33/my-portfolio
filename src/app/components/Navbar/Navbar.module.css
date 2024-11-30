@@ -1,0 +1,38 @@
+.navbar {
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+    list-style-type: none;
+    margin-left: 40px;
+  }
+  
+  .navbar a {
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    font-size: 17px;
+    cursor: pointer;
+  }
+  
+  .navbar a::after {
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transition: 0.5s ease-in-out;
+  }
+
+  .navbar a:hover::after {
+    width: 105%;
+  }
+
+  .iconDarkMode {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: -180px;
+    margin-top: -25px;
+    cursor: pointer;
+  }

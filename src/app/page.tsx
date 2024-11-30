@@ -1,0 +1,25 @@
+import Image from 'next/image';
+import styles from './Home.module.css';
+import Header from './components/Header/header';
+import Button from './components/Button/button';
+import Navbar from './components/Navbar/navbar';
+
+export default function Home() {
+    return (
+        <section className={styles.home}>
+            <Navbar />
+            <Header />
+            <Button />
+            
+            <div id={styles.mouse}>
+            <Image 
+            src="/img/iconMouse.svg" 
+            alt="mouse" 
+            width={35}
+            height={35}/>
+            </div>
+            <span className={styles.span}>Role para baixo! </span>
+        </section>
+    )
+} 
+
