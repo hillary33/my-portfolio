@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+.navButton {
+    text-decoration: none;
+}
+
 @keyframes mouseUpDown {
     0% {
         top: 0;

@@ -5,8 +5,11 @@
   font-family: "League Spartan", sans-serif;
   font-optical-sizing: auto;
 
-   --primary-color: #9f2bbd;
-    --second-color: #992c4b;
+  --bg-primary-color: #ffc6ff;
+  --primary-color: #9f2bbd;
+  --second-color: #992c4b;
+  --text-color: #213547;
+
 }
 
 * {
@@ -17,14 +20,16 @@
 body {
   display: flex;
   place-items: center;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 0px 50px 0 50px;
+  max-width: 1920px;
+  max-height: 1080px;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   line-height: 1.1;
 }
+
 
 
 [data-theme='dark']{
@@ -33,11 +38,8 @@ h1 {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffc6ff;
-  }
-  a:hover {
-    color: #747bff;
+    color: var(--text-color);
+    background-color: var(--bg-primary-color);
   }
 }
 

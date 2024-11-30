@@ -4,13 +4,14 @@ import  Link  from 'next/link';
 
 export default function Navbar(){
     return(
-        <>
+        
+        <section id={styles.container}>
             <section className={styles.navbar}>
-            <Link href='home'> Home </Link>
-            <Link href='about-me'> Sobre </Link>
-            <Link href='project'> Projetos </Link>
-            <Link href='certificate'> Certificados </Link>
-            <Link href='contatos'> Contato </Link>
+            <Link href={'/'}> Home </Link>
+            <Link href={'/AboutMe'}> Sobre </Link>
+            <Link href={'/Project'}> Projetos </Link>
+            <Link href={'/Certificate'}> Certificados </Link>
+            <Link href={'/Contact'}> Contato </Link>
             </section>
 
             <div className={styles.iconDarkMode}>
@@ -19,7 +20,8 @@ export default function Navbar(){
                width={22}
                height={22}/>
             </div>
-        </>
+        </section>
+        
     )
 }
 
