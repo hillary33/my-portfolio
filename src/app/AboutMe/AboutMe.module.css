@@ -1,5 +1,29 @@
 .container {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 130px;
+    gap: 20px;
     flex-direction: column;
-    margin-top: 50px;
+    text-align: center;
+}
+
+.container h2 {
+    align-self: center;
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.container p {
+    font-size: 1.5em;
+    font-weight: 300;
+    width: 50rem;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: flex;       
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    flex-direction: row;
 }
