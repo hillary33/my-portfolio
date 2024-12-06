@@ -2,13 +2,11 @@ import Image from 'next/image';
 import styles from './Home.module.css';
 import Header from './components/Header/header';
 import Button from './components/Button/button';
-import Navbar from './components/Navbar/navbar';
 import Link from 'next/link';
 
 export default function Home() {
     return (
         <section className={styles.home}>
-            <Navbar />
             <Header />
             <Link href={'/Contact'} className={styles.navButton}> <Button /> </Link> 
             

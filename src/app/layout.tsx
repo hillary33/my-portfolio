@@ -1,6 +1,9 @@
+
 import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
+import Navbar from "./components/Navbar/navbar";
+import { DarkTheme } from "./components/DarkTheme/darkTheme";
 
 
 export const metadata: Metadata = {
@@ -20,6 +23,12 @@ export default function RootLayout({
       </head>
       <body>
       <ThemeProvider attribute="data-theme">
+        <section className="menu">
+          <Navbar />
+        </section>
+        <div className="darkTheme">
+          <DarkTheme />
+        </div>
         {children}
        </ThemeProvider>
       </body>

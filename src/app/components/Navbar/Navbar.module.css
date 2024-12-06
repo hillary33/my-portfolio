@@ -1,15 +1,18 @@
 #container {
-  width: 1100px;
-  height: 25px;
-  margin-top: 40px;
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
 }
 
 .navbar {
     display: flex;
+    justify-content: flex-start;
     position: absolute;
-    gap: 28px;
     list-style-type: none;
-    margin-left: 50px;
+    gap: 28px;
+    font-size: 28px;
+    font-weight: 300;
   }
   
   .navbar a {
@@ -32,13 +35,7 @@
   }
 
   .navbar a:hover::after {
-    width: 104%;
+    width: 102%;
   }
 
-  .iconDarkMode {
-    display: flex;
-    flex-direction: row-reverse;
-    margin-right: -150px;
-    margin-top: -8px;
-    cursor: pointer;
-  }
+  
