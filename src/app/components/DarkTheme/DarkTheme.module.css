@@ -1,0 +1,20 @@
+.button {
+    display: flex;
+    padding: 0.2rem;
+    border-radius: 9999px;
+    flex-basis: 30px;
+    cursor: pointer;
+
+}
+
+.sun {
+    height: 20px;
+    width: 20px;
+    color: #334155;
+}
+
+.moon {
+    height: 20px;
+    width: 20px;
+    color: #fbbf24;
+}

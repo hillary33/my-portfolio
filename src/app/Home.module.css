@@ -1,6 +1,14 @@
 .home {
-    margin: 0;
-    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    flex-direction: column;
+}
+
+.navButton {
+    text-decoration: none;
+    align-self: flex-start;
 }
 
 @keyframes mouseUpDown {
@@ -20,7 +28,7 @@
     position: relative;
     justify-content: center;
     margin-left: 330px;
-    margin-top: 120px;
+    margin-top: 100px;
     animation: mouseUpDown 2s linear infinite;
 }
 

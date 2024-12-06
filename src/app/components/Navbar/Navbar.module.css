@@ -1,15 +1,24 @@
+#container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+}
+
 .navbar {
     display: flex;
-    gap: 25px;
-    margin-top: 20px;
+    justify-content: flex-start;
+    position: absolute;
     list-style-type: none;
-    margin-left: 40px;
+    gap: 28px;
+    font-size: 28px;
+    font-weight: 300;
   }
   
   .navbar a {
     position: relative;
     text-decoration: none;
-    color: #000;
+    color: var(--text-color);
     font-size: 17px;
     cursor: pointer;
   }
@@ -17,22 +26,16 @@
   .navbar a::after {
     content: " ";
     width: 0%;
-    height: 2px;
-    background-color: #000;
+    height: 1.5px;
+    background-color: var(--text-color);
     position: absolute;
-    bottom: -2px;
+    bottom: -1px;
     left: 0;
     transition: 0.5s ease-in-out;
   }
 
   .navbar a:hover::after {
-    width: 105%;
+    width: 102%;
   }
 
-  .iconDarkMode {
-    display: flex;
-    flex-direction: row-reverse;
-    margin-right: -180px;
-    margin-top: -25px;
-    cursor: pointer;
-  }
+  
