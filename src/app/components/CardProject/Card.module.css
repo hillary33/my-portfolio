@@ -21,7 +21,7 @@
 }
 
 .card .content h3 {
-    font-size: 22px;
+    font-size: 20px;
     font-weight:400;
     border-bottom: solid 1px rgba(255, 255, 255, 0.6);
     text-align: center;
@@ -34,10 +34,17 @@
 }
 
 .button {
-    margin-top: 35px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     flex-direction: column;
     height: 40px;
+    margin-bottom: 15px;
+}
+.skill {
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+    flex-wrap: wrap;
+
 }
