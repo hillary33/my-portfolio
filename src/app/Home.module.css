@@ -7,8 +7,11 @@
 }
 
 .navButton {
-    text-decoration: none;
-    align-self: flex-start;
+    margin-top: -35px;
+    display: flex;
+    flex-direction: column;
+    margin-left: -300px;
+   text-decoration: none;
 }
 
 @keyframes mouseUpDown {

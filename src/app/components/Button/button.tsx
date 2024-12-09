@@ -1,9 +1,13 @@
 import styles from './Button.module.css';
 
-export default function Button() {
+type TitleButton = {
+    title: string;
+};
+
+export default function Button({title}: TitleButton) {
     return (
         <>
-        <button className={styles.button}> Entrar em contato </button>
+        <button className={styles.button}> {title} </button>
         </>
     )
 }

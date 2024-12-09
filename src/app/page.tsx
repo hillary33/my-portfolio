@@ -5,10 +5,14 @@ import Button from './components/Button/button';
 import Link from 'next/link';
 
 export default function Home() {
+    const titleButton = {title: "Entre em Contato"};
+
     return (
         <section className={styles.home}>
             <Header />
-            <Link href={'/Contact'} className={styles.navButton}> <Button /> </Link> 
+            <Link href={'/Contact'} className={styles.navButton}>
+             <Button title={titleButton.title} /> 
+            </Link> 
             
             <div id={styles.mouse}>
                 <Link href={'/AboutMe'}>

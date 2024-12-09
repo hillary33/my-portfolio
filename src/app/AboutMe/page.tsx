@@ -2,6 +2,7 @@ import CardSkill from '../components/CardSkill/Card';
 import styles from './AboutMe.module.css';
 
 export default function AboutMe(){
+
     return(
         <>
             <section className={styles.container}> 
