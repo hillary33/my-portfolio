@@ -1,14 +1,16 @@
 .header {
     display: flex;
-    margin-top: 6rem;
+    margin-top: 100px;
+    align-items: center;
     gap: 200px;
   }
   
   .textHeader {
     display: flex;
     flex-direction: column;
-    margin-left: 10rem;
-    margin-top: 2rem;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 100px;
     gap: 20px;
   }
   
@@ -36,6 +38,7 @@
       transform: scale(1);
     }
   }
+  
 
   .picture:hover {
     animation: picProfile 2s linear 1;

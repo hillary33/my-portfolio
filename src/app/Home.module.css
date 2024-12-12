@@ -1,7 +1,5 @@
 .home {
     display: flex;
-    align-items: center;
-    justify-content: center;
     margin-top: 70px;
     flex-direction: column;
 }
@@ -10,8 +8,8 @@
     margin-top: -35px;
     display: flex;
     flex-direction: column;
-    margin-left: -300px;
-   text-decoration: none;
+    margin-left: 300px;
+    text-decoration: none;
 }
 
 @keyframes mouseUpDown {

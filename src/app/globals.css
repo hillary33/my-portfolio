@@ -15,6 +15,9 @@
   --bg-color: #831843;
   --text-color: #f8fafc;
 }
+/* html {
+  scroll-behavior: smooth;
+} */
 
 * {
     margin: 0;
@@ -28,6 +31,7 @@ body {
   max-width: 1920px;
   max-height: 1080px;
   background-color: var(--bg-color);
+  flex-direction: column;
 }
 
 h1 {

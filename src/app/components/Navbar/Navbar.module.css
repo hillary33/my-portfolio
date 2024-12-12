@@ -11,15 +11,14 @@
     position: absolute;
     list-style-type: none;
     gap: 28px;
-    font-size: 28px;
-    font-weight: 300;
   }
   
   .navbar a {
+    font-weight: 500;
     position: relative;
     text-decoration: none;
     color: var(--text-color);
-    font-size: 17px;
+    font-size: 20px;
     cursor: pointer;
   }
   

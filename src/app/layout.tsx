@@ -4,6 +4,11 @@ import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import Navbar from "./components/Navbar/navbar";
 import { DarkTheme } from "./components/DarkTheme/darkTheme";
+import Home from "./page";
+import AboutMe from "./AboutMe/page";
+import Project from "./Project/page";
+import Certificate from "./Certificate/page";
+import Contact from "./Contact/page";
 
 
 export const metadata: Metadata = {
@@ -12,7 +17,6 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
@@ -29,7 +33,11 @@ export default function RootLayout({
         <div className="darkTheme">
           <DarkTheme />
         </div>
-        {children}
+          <Home />
+          <AboutMe />
+          <Project />
+          <Certificate />
+          <Contact />
        </ThemeProvider>
       </body>
     </html>

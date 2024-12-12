@@ -5,7 +5,7 @@ import styles from './Header.module.css';
 export default function Header() {
     return(
         <>
-            <div className={styles.header}>
+            <section className={styles.header}>
                 <div className={styles.textHeader}>
                     <h2>Olá, sou a Hillary!</h2>
                     <p>
@@ -15,7 +15,7 @@ export default function Header() {
                 <div className={styles.picture}>
                     <Image src="/img/profile.png" height='300' width='300' alt="foto perfil" className={styles.img}/>
                 </div>
-            </div>
+            </section>
         </>
     )
 }
