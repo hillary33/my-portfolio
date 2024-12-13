@@ -6,12 +6,19 @@
     gap: 20px;
     flex-direction: column;
     text-align: center;
+    height: 100vh;
+}
+
+.container h1 {
+    font-weight: 500;
+    font-size: 34px;
 }
 
 .container h2 {
     align-self: center;
     font-weight: 400;
     font-size: 32px;
+    margin-top: 15px;
 }
 
 .container p {
@@ -21,9 +28,10 @@
     margin-bottom: 20px;
 }
 
+
 .cards {
     display: flex;       
-    justify-content: space-between; 
+    justify-content: space-around; 
     flex-wrap: wrap; 
     flex-direction: row;
 }

@@ -15,9 +15,9 @@
   --bg-color: #831843;
   --text-color: #f8fafc;
 }
-/* html {
+html {
   scroll-behavior: smooth;
-} */
+}
 
 * {
     margin: 0;
@@ -27,7 +27,7 @@
 body {
   display: flex;
   place-items: center;
-  margin: 0px 50px 0 50px;
+  margin: 0px 50px;
   max-width: 1920px;
   max-height: 1080px;
   background-color: var(--bg-color);
@@ -43,6 +43,7 @@ h1 {
   display: flex;
   position: fixed;
   top: 0;
+  left: 50px;
   width: 100%;
   align-items: flex-start;
 }
@@ -50,6 +51,6 @@ h1 {
   display: flex;
   position: fixed;
   top: 25px; 
-  right: 40px; 
+  right: 50px; 
   z-index: 1001; 
 }

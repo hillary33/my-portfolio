@@ -14,8 +14,25 @@
     flex-wrap: wrap;          /* Permite que os cards quebrem para a linha seguinte se necessário */
 }
 
+
+@keyframes cardsInteraction {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 .card .content {
     opacity: 0.8;
     padding: 20px;
     text-align: center;
+}
+
+.card:hover {
+    animation: cardsInteraction 2s linear 1;
 }

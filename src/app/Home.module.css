@@ -1,14 +1,15 @@
 .home {
     display: flex;
-    margin-top: 70px;
+    margin-top: 150px;
     flex-direction: column;
 }
 
 .navButton {
     margin-top: -35px;
     display: flex;
+    justify-content: flex-start;
+    margin-left: 145px;
     flex-direction: column;
-    margin-left: 300px;
     text-decoration: none;
 }
 
@@ -28,15 +29,14 @@
     display: flex;
     position: relative;
     justify-content: center;
-    margin-left: 330px;
-    margin-top: 100px;
+    align-items: center;
+    margin-top: 10vh;
     animation: mouseUpDown 2s linear infinite;
 }
 
 .span {
     display: flex;
     justify-content: center;
-    margin-left: 330px;
     margin-top: 15px;
     font-weight: 400;    
 }
