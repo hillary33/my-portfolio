@@ -1,40 +1,41 @@
 #container {
   display: flex;
   width: 100%;
-  height: auto;
-  margin-top: 30px;
+  height: 60px;
+  align-items: center;
 }
 
 .navbar {
-    display: flex;
-    justify-content: flex-start;
-    position: absolute;
-    list-style-type: none;
-    gap: 28px;
-  }
+  display: flex;
+  justify-content: flex-start;
+  list-style-type: none;
+  gap: 28px;
+  margin-left: 25px;
+  align-self: center;
+  background-color: var(--bg-color);
   
-  .navbar a {
-    font-weight: 500;
-    position: relative;
-    text-decoration: none;
-    color: var(--text-color);
-    font-size: 20px;
-    cursor: pointer;
-  }
-  
-  .navbar a::after {
-    content: " ";
-    width: 0%;
-    height: 1.5px;
-    background-color: var(--text-color);
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    transition: 0.5s ease-in-out;
-  }
+}
 
-  .navbar a:hover::after {
-    width: 102%;
-  }
+.navbar a {
+  font-weight: 500;
+  position: relative;
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 20px;
+  cursor: pointer;
+}
 
-  
+.navbar a::after {
+  content: " ";
+  width: 0%;
+  height: 1.5px;
+  background-color: var(--text-color);
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.navbar a:hover::after {
+  width: 102%;
+}
