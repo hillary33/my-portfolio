@@ -1,4 +1,4 @@
-import CardSkill from '../components/CardSkill/Card';
+import CardSkill from '../../CardSkill/Card';
 import styles from './AboutMe.module.css';
 
 export default function AboutMe(){

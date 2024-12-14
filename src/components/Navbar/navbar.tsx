@@ -6,11 +6,11 @@ export default function Navbar(){
         
         <section id={styles.container}>
             <div className={styles.navbar}>
-            <Link href={'/'}> Home </Link>
-            <Link href={'/AboutMe'}> Sobre </Link>
-            <Link href={'/Project'}> Projetos </Link>
-            <Link href={'/Certificate'}> Certificados </Link>
-            <Link href={'/Contact'}> Contato </Link>
+            <Link href={'/#'}> Home </Link>
+            <Link href={'/#about-me'}> Sobre </Link>
+            <Link href={'/#project'}> Projetos </Link>
+            <Link href={'/#certificate'}> Certificados </Link>
+            <Link href={'/#contact'}> Contato </Link>
             </div>
         </section>
         

@@ -15,7 +15,7 @@ export const DarkTheme: React.FC = () => {
         {theme === "dark" ? (
           <Moon className={styles.moon} />
         ) : (
-        <Sun className={styles.sun} />
+          <Sun className={styles.sun} />
         )}
       </button>
   );

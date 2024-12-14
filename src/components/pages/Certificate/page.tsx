@@ -1,4 +1,4 @@
- import TimeLine from '../components/TimeLine/TimeLine';
+ import TimeLine from '../../TimeLine/TimeLine';
  import styles from './Certificate.module.css'
 
 export default function Certificate(){

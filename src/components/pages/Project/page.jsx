@@ -1,4 +1,4 @@
-import Card from '../components/CardProject/card';
+import Card from '../../CardProject/card';
 import styles from './Project.module.css'
 
 function Project(){
