@@ -23,14 +23,14 @@
 .card .content h3 {
     font-size: 20px;
     font-weight:400;
-    border-bottom: solid 1px rgba(255, 255, 255, 0.6);
+    border-bottom: solid 1px var(--text-color);
+    padding: 3px;
     text-align: center;
 }  
 
 .card .content img {
     width: 250px;
     height: 200px;
-    border-radius: 20px;
 }
 
 .button {
@@ -38,9 +38,13 @@
     justify-content: center;
     align-items: flex-end;
     flex-direction: column;
-    height: 40px;
+    height: 38px;
     margin-bottom: 15px;
 }
+.button a{
+    text-decoration: none;
+}
+
 .skill {
     display: flex;
     gap: 5px;

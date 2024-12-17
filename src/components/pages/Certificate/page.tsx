@@ -36,7 +36,7 @@ export default function Certificate(){
         date: '2023-07',
         title: 'Certificado Trilha Conectar',
         institution: 'rocketseat',
-        description: 'Fundamentos programação web',
+        description: 'Fundamentos programação web, HTML, CSS',
       },
       // Adicione mais certificados aqui
     ];

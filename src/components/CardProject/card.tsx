@@ -9,31 +9,32 @@ type Card = {
     title: string,
     src: string,
     alt: string,
+    href: string,
     skills: string[];
     iconSize?: number | string;
 }
 
-export default function Card({title, src, alt, skills}: Card) {
+export default function Card({title, src, alt, skills, href}: Card) {
     const titleButton = {title: "Git Hub"};
 
     const renderSkillIcon = (skill: string) => {
         switch (skill.toLowerCase()) {
             case 'react':
-                return <FaReact title='React' color="#7950F2" size={28}/>;
+                return <FaReact title='React' color="#7950F2" size={32}/>;
             case 'nodejs':
-                return <FaNodeJs title="Node.js" color="#7950F2" size={28} />;
+                return <FaNodeJs title="Node.js" color="#7950F2" size={32} />;
             case 'database':
-                return <FaDatabase title="Database" color="#7950F2" size={28} />;
+                return <FaDatabase title="Database" color="#7950F2" size={32} />;
             case 'html':
-                return <FaHtml5 title="Html" color='#7950F2' size={28} />;
+                return <FaHtml5 title="Html" color='#7950F2' size={32} />;
             case "css":
-                return <FaCss3 title="Css" color='#7950F2' size={28}/>;
+                return <FaCss3 title="Css" color='#7950F2' size={32}/>;
             case "next":
-               return  <RiNextjsFill title="Next" color='#7950F2' size={28}/>
+               return  <RiNextjsFill title="Next" color='#7950F2' size={32}/>
             case "javascript":
-                return  <RiJavascriptFill title="Javascript" color='#7950F2' size={28}/>
+                return  <RiJavascriptFill title="Javascript" color='#7950F2' size={32}/>
             case 'typescript':
-                return <BiLogoTypescript title="Typescript" color='#7950F2' size={28}/>
+                return <BiLogoTypescript title="Typescript" color='#7950F2' size={32}/>
             default:
                 return null;;
         }
@@ -48,7 +49,9 @@ export default function Card({title, src, alt, skills}: Card) {
                     {skills.map(skill => renderSkillIcon(skill))}
                 </div>
                 <div className={styles.button}>
-                    <Button title={titleButton.title}/>
+                    <a href={href} target='_blank' rel='noopener noreferrer'>
+                        <Button title={titleButton.title}/>
+                    </a>
                 </div>
             </div>
         </section>

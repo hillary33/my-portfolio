@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import styles from './Home.module.css';
 import Header from '../components/Header/header';
-import Button from '../components/Button/button';
 import Link from 'next/link';
 import AboutMe from '@/components/pages/AboutMe/page';
 import Certificate from '@/components/pages/Certificate/page';
@@ -9,15 +8,9 @@ import Contact from '@/components/pages/Contact/page';
 import Project from '@/components/pages/Project/page';
 
 export default function Home() {
-    const titleButton = {title: "Entre em Contato"};
-
     return (
         <section className={styles.home}>
-            <Header />
-            <Link href={'/#contact'} className={styles.navButton}>
-             <Button title={titleButton.title} /> 
-            </Link> 
-            
+            <Header />    
             <div id={styles.mouse}>
                 <Link href={'/#about-me'}>
                 <Image 

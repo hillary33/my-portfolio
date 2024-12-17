@@ -26,6 +26,9 @@
     width: 30rem;
   }
 
+  .navButton {
+    text-decoration: none;
+  }
   @keyframes picProfile {
     0% {
       transform: scale(1);

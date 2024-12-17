@@ -2,9 +2,10 @@
     display: flex;
     justify-content: center;
     position: relative;
-    width: 280;
+    width: 120px;
     height: 150px;
     margin: 30px;
+    gap: 3px;
     border-radius: 13px;
     overflow: hidden;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.1);

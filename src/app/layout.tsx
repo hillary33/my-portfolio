@@ -22,12 +22,12 @@ export default function RootLayout({ children
       </head>
       <body>
       <ThemeProvider attribute="data-theme">
-        <section className="menu">
+        <section id="menu">
           <Navbar />
+          <div className="darkTheme">
+            <DarkTheme />
+          </div>
         </section>
-        <div className="darkTheme">
-          <DarkTheme />
-        </div>
           {children}
        </ThemeProvider>
       </body>

@@ -4,14 +4,6 @@
     flex-direction: column;
 }
 
-.navButton {
-    margin-top: -35px;
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 145px;
-    flex-direction: column;
-    text-decoration: none;
-}
 
 @keyframes mouseUpDown {
     0% {
@@ -30,7 +22,7 @@
     position: relative;
     justify-content: center;
     align-items: center;
-    margin-top: 10vh;
+    margin-top: 15vh;
     animation: mouseUpDown 2s linear infinite;
 }
 
