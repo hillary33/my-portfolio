@@ -1,0 +1,17 @@
+.ctn {
+    display: flex;
+    margin-top: 140px;
+    margin-left: 80px;
+    align-items: flex-start;
+    gap: 100px;
+}
+
+.ctn h1 {
+    text-align: center;
+}
+
+.ctn .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
