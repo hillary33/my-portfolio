@@ -20,7 +20,7 @@ const TimeLine: React.FC<TimeLineProps> = ({ certificates }) => {
             <div className={styles.timelineContent}>
               <h3>{certificate.title}</h3>
               <h4>{certificate.institution}</h4>
-              {certificate.description && <p>{certificate.description}</p>}
+              {certificate.description && <h4>{certificate.description}</h4>}
             </div>
           </div>
         ))}

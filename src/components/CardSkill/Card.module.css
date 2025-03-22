@@ -37,3 +37,20 @@
 .card:hover {
     animation: cardsInteraction 2s linear 1;
 }
+
+@media (max-width: 768px) {
+    .card {
+        width: 90px;
+        height: 120px;
+        margin: 15px;
+    }
+
+    .card h3 {
+        font-size: 0.8em;
+    }
+
+    .card img {
+        width: 60px;
+        height: 60px
+    }
+}

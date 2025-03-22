@@ -55,3 +55,22 @@ h1 {
   right: 50px; 
   z-index: 1000; 
 }
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 1.2em;
+    font-weight: 300;
+    text-align: center;
+    width: 18rem;
+  }
+}

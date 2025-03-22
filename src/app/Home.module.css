@@ -32,3 +32,19 @@
     margin-top: 15px;
     font-weight: 400;    
 }
+
+@media (max-width: 480px) {
+    .home {
+        margin-top: 100px;
+    }
+
+    #mouse {
+        margin-top: 7vh;
+    }
+}
+
+@media (max-width: 999px) {
+    #mouse {
+        margin-top: 10vh;
+    }
+}

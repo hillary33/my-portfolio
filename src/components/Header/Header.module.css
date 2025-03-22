@@ -45,3 +45,51 @@
   .picture:hover {
     animation: picProfile 2s linear 1;
   }
+
+  @media (max-width: 999px) {
+    .header {
+      display: flex;
+      flex-direction: column; /* Empilha os elementos verticalmente */
+      align-items: center; /* Centraliza horizontalmente */
+      gap: 25px;
+  }
+  
+  .textHeader, .picture {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Centraliza internamente os itens de cada div */
+  }
+  
+  .picture img {
+      margin-top: 10px; /* Ajusta o espaçamento entre o botão e a foto */
+  }
+  
+  .picture:hover {
+    animation: picProfile 2s linear 1;
+  }
+  
+  }
+
+  @media (max-width: 480px) {
+    .textHeader {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 20px;
+    }
+    
+    .textHeader h2 {
+      font-size: 1.8rem;
+      text-align: center;
+      font-weight: 600;
+    }
+    
+    .textHeader p{
+      font-size: 1.2em;
+      font-weight: 300;
+      text-align: center;
+      width: 18rem;
+    }
+  
+  }

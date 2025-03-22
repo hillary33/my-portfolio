@@ -2,11 +2,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 130px;
     gap: 20px;
     flex-direction: column;
     text-align: center;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
 }
 
 .container h2 {
@@ -19,14 +19,55 @@
 .container p {
     font-size: 1.5em;
     font-weight: 300;
-    width: 50rem;
+    width: 90%;
+    max-width: 800px;
     margin-bottom: 20px;
 }
 
 
 .cards {
     display: flex;       
-    justify-content: space-evenly; 
     flex-wrap: wrap; 
     flex-direction: row;
+    justify-content: center;
+    gap: 20px;
 }
+
+@media (max-width: 999px) {
+    .container {
+        margin-top: 10%;
+        height: auto; /* Permite altura flexível */
+    }
+
+    .container h1 {
+        font-size: 1.8rem;
+    }
+
+    .container h2 {
+        font-size: 1.6rem;
+    }
+
+    .container p {
+        font-size: 1.2rem;
+        width: 80%; /* Adapta a largura do texto */
+    }
+
+    .cards {
+        flex-direction: row; 
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        gap: 10px; /* Reduz espaçamento em dispositivos menores */
+        height: auto; /* Permite altura flexível */
+    }
+
+    .container p {
+        width: 90%; /* Deixa o parágrafo ocupar a largura da tela */
+    }
+
+
+}
+

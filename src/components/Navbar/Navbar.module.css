@@ -16,6 +16,78 @@
   
 }
 
+.navbarMobile {
+  display: none;
+  cursor: pointer;
+  padding-left: 15px;
+}
+
+.menuMobile {
+  display: none; /* Menu escondido por padrão */
+  position: absolute;
+  top: 25px;
+  width: 35vw;
+  height: auto;
+  padding-bottom: 15px;
+  border-radius: 6px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around 2px center;
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(-100%); /* Oculta o menu */
+  gap: 20px;
+  margin-left: 35px;
+  align-self: center;
+  background-color: var(--bg-color);
+}
+
+.menuMobile.open {
+  display: flex; /* Mostra o menu */
+  transform: translateY(0); /* Exibe o menu na posição original */
+}
+
+.buttonMenu {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 999px) {
+  .navbar {
+    display: none !important;
+  }
+
+  .navbarMobile a {
+    font-weight: 400;
+    position: relative;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .navbarMobile a::after {
+    content: " ";
+    width: 0%;
+    height: 1.5px;
+    background-color: var(--text-color);
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .navbarMobile a:hover::after {
+    width: 102%;
+  }
+
+  .navbarMobile {
+    display: flex;
+    align-items: center;
+}
+
+}
+
 .navbar a {
   font-weight: 500;
   position: relative;

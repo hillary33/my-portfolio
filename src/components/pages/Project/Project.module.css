@@ -1,6 +1,8 @@
 .project {
     display: flex;
     flex-direction:column;
+    width: 100%;
+    padding: 0 5%;
 }
 
 .project .container {
@@ -8,8 +10,9 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    margin-top: 100px;
     gap: 10px;
+    text-align: center;
+    gap: 15px;
 }
 .project .container p {
     font-size: 20px;
@@ -22,4 +25,24 @@
     align-items: center;
     padding: 15px;
     border: none;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 800px) {
+    .project .cards {
+        flex-direction: column; /* Empilha os cards verticalmente */
+        align-items: center;
+        gap: 20px; /* Reduza o espaçamento entre eles */
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .project .container p {
+        font-size: 16px;
+    }
+
+    .project .cards {
+        margin-top: 20px;
+    }
 }
