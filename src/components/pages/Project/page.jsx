@@ -5,7 +5,7 @@ function Project(){
     return(
         <section className={styles.project}>
             <div className={styles.container}>
-                <h1>Projetos</h1>
+                <h2>Projetos</h2>
                 <p>Aqui está um pouco do meu trabalho</p>
             </div>
             <div className={styles.cards}>

@@ -50,6 +50,7 @@
   background: none;
   border: none;
   cursor: pointer;
+  margin-left: 15px;
 }
 
 @media (max-width: 999px) {

@@ -62,6 +62,7 @@
     .container {
         gap: 10px; /* Reduz espaçamento em dispositivos menores */
         height: auto; /* Permite altura flexível */
+        margin-bottom: 5vh;
     }
 
     .container p {
