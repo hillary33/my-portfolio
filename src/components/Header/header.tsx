@@ -13,7 +13,7 @@ export default function Header() {
                 <div className={styles.textHeader}>
                     <h2>Olá, sou a Hillary!</h2>
                     <p>
-                        Recém formada em Análise e Desenvolvimento de Sistemas (ADS) e sou apaixonada por desenvolvimento web. Estou sempre ansiosa para aprender cada vez mais e estou determinada a aprimorar minhas habilidades para criar soluções inovadoras e impactantes.
+                        Formada em Análise e Desenvolvimento de Sistemas (ADS) e sou apaixonada por desenvolvimento web. Estou sempre ansiosa para aprender cada vez mais e estou determinada a aprimorar minhas habilidades para criar soluções inovadoras e impactantes.
                     </p>
                     <Link href={'/#contact'} className={styles.navButton}>
                         <Button title={titleButton.title} /> 
