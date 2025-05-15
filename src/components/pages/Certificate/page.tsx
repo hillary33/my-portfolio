@@ -38,6 +38,12 @@ export default function Certificate(){
         institution: 'rocketseat',
         description: 'Fundamentos programação web, HTML, CSS',
       },
+      {
+        date: '2021-12',
+        title: 'Graduação em Técnico em Contabilidade',
+        institution: 'ETEC - centro Paula Souza',
+        description: 'Curso técnico em contabilidade',
+      },
       // Adicione mais certificados aqui
     ];
 

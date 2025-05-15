@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import styles from './Navbar.module.css';
 import  Link  from 'next/link';
+import { DarkTheme } from '../DarkTheme/darkTheme';
 
 export default function Navbar(){
     const [menuOpen, setMenuOpen] = useState(false);
@@ -32,6 +33,9 @@ export default function Navbar(){
                 <Link href={'/#project'}> Projetos </Link>
                 <Link href={'/#certificate'}> Certificados </Link>
                 <Link href={'/#contact'}> Contato </Link>
+            </div>
+            <div className="darkTheme">
+                <DarkTheme />
             </div>
         </section>
         
