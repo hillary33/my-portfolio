@@ -1,8 +1,13 @@
+
+
 #container {
   display: flex;
-  width: 100%;
-  height: 60px;
+  width: 100vw;
+  height: 70px;
   align-items: center;
+  justify-content: space-between;
+  padding: 0 22px;
+  box-sizing: border-box;
 }
 
 .navbar {
@@ -10,7 +15,6 @@
   justify-content: flex-start;
   list-style-type: none;
   gap: 28px;
-  margin-left: 25px;
   align-self: center;
   background-color: var(--bg-color);
   
@@ -19,14 +23,13 @@
 .navbarMobile {
   display: none;
   cursor: pointer;
-  padding-left: 15px;
 }
 
 .menuMobile {
   display: none; /* Menu escondido por padrão */
   position: absolute;
-  top: 25px;
-  width: 35vw;
+  top: 60px;
+  width: 100%;
   height: auto;
   padding-bottom: 15px;
   border-radius: 6px;
@@ -34,23 +37,29 @@
   align-items: center;
   justify-content: space-around 2px center;
   transition: transform 0.3s ease-in-out;
-  transform: translateY(-100%); /* Oculta o menu */
+  transform: translateX(-100%); /* Oculta o menu */
   gap: 20px;
-  margin-left: 35px;
   align-self: center;
   background-color: var(--bg-color);
+  z-index: 1001;
 }
 
 .menuMobile.open {
   display: flex; /* Mostra o menu */
-  transform: translateY(0); /* Exibe o menu na posição original */
+  transform: translateX(0); /* Exibe o menu na posição original */
 }
 
 .buttonMenu {
   background: none;
   border: none;
   cursor: pointer;
-  margin-left: 15px;
+  padding-left: 15px;
+}
+
+.darkTheme {
+  display: flex;
+  position: fixed;
+  z-index: 1000; 
 }
 
 @media (max-width: 999px) {

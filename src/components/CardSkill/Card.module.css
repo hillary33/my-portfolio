@@ -29,9 +29,20 @@
 }
 
 .card .content {
+    display: flex;
+    flex-direction: column; /* Garante alinhamento vertical */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
     opacity: 0.8;
     padding: 20px;
     text-align: center;
+}
+
+.card img {
+    display: block; /* Garante que a imagem seja tratada como um bloco */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    width: 60px;
+    height: 60px;
 }
 
 .card:hover {
