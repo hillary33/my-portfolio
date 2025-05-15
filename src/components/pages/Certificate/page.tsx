@@ -41,7 +41,7 @@ export default function Certificate(){
       {
         date: '2021-12',
         title: 'Graduação em Técnico em Contabilidade',
-        institution: 'ETEC - centro Paula Souza',
+        institution: 'ETEC - Centro Paula Souza',
         description: 'Curso técnico em contabilidade',
       },
       // Adicione mais certificados aqui
